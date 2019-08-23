@@ -1,0 +1,17 @@
+.Navlink {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+
+  li {
+      margin: 5px;
+      padding: 5px;
+      list-style: none;
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  
