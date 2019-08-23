@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './Artist.css';
 import Releases from '../Releases/Releases';
 
+
 const Artist = ({ match }) => {
 
   const [releases, setReleases] = useState([]);

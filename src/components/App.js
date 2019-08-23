@@ -4,6 +4,7 @@ import styles from './App.css';
 import Nav from './Nav/Nav';
 import Search from './Search/Search';
 import Artist from './Artist/Artist';
+import ReleaseDetail from './Releases/ReleaseDetail';
 
 const App = () => {
 
@@ -15,6 +16,7 @@ const App = () => {
           <Route path='/' exact component={Home} />
           <Route path='/search' exact component={Search} />
           <Route path='/search/:id' component={Artist} />
+          <Route path='/songs/:title/:id' component={ReleaseDetail} />
         </Switch>
       </div>
     </Router>

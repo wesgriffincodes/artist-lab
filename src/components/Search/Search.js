@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { getArtists } from '../../services/getArtistApi';
 
 
 const Search = () => {
@@ -10,18 +11,19 @@ const Search = () => {
   const [query, setQuery] = useState('');
   
   useEffect(() => {
-    getArtists();
+    getArtists(query, setArtists);
   }, [query]);
   
-  
-  const getArtists = async() => {
-    if(query) {
-      const res = await fetch(`http://musicbrainz.org/ws/2/artist?query=${query}&fmt=json&limit=25`);
-      const data = await res.json();
-      setArtists(data.artists);
-      console.log(data.artists);     
-    }
-  };
+  //   FIXME: created in getArtistApi.js in services
+  //   const getArtists = async() => {
+  //     if(query) {
+  //       const res = await fetch(`http://musicbrainz.org/ws/2/artist?query=${query}&fmt=json&limit=25`);
+  //       const data = await res.json();
+  //       setArtists(data.artists);
+  //       console.log(data.artists);     
+  //     }
+  //   };
+
   
   const updateSearch = ({ target }) => {
     setSearch(target.value);
