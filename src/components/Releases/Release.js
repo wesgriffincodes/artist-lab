@@ -4,7 +4,7 @@ import imageReplace from '../../assets/parental.png';
 import { Link } from 'react-router-dom';
 
 
-const Release = ({ release }) => {
+const Release = ({ release, artistName }) => {
 
   const coverArt = release['cover-art-archive'].front ? 
     `http://coverartarchive.org/release/${release.id}/front-250` : 
@@ -15,7 +15,7 @@ const Release = ({ release }) => {
 
   return (
     <>
-    <Link to={`/songs/${release.title}/${release.id}`}>
+    <Link to={`/songs/${artistName}/${release.title}/${release.id}`}>
       <h1>{release.title}</h1>
     </Link>
       <img src={coverArt} />
@@ -25,7 +25,7 @@ const Release = ({ release }) => {
 
 Release.propTypes = {
   release: PropTypes.object,
-  artist: PropTypes.object
+  artistName: PropTypes.string
   
 };
 

@@ -44,7 +44,7 @@ const Search = () => {
       {artists.map(artist => (
         <div key={artist.id}>
           <h1>
-            <Link to={`/search/${artist.id}`}>{artist.name}</Link>
+            <Link to={`/search/${artist.name}/${artist.id}`}>{artist.name}</Link>
           </h1>
           <h3>{artist.country}</h3>
         </div>

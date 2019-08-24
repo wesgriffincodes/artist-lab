@@ -21,7 +21,7 @@ const Artist = ({ match }) => {
 
   return (
     <div className={styles.Artist}>
-      <Releases releases={releases} />
+      <Releases artistName={match.params.artistName} releases={releases} />
       <h1>hard code</h1>
     </div>
   );

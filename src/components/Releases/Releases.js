@@ -2,10 +2,10 @@ import React from 'react';
 import Release from './Release';
 import PropTypes from 'prop-types';
 
-const Releases = ({ releases }) => {
+const Releases = ({ releases, artistName }) => {
 
   const releasesList = releases.map(release => {
-    return <Release release={release} key={release.id} />;
+    return <Release artistName={artistName} release={release} key={release.id} />;
   });
 
   return (
@@ -16,7 +16,8 @@ const Releases = ({ releases }) => {
 };
 
 Releases.propTypes = {
-  releases: PropTypes.array.isRequired
+  releases: PropTypes.array.isRequired,
+  artistName: PropTypes.string
 };
 
 

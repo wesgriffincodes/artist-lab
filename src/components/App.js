@@ -5,6 +5,7 @@ import Nav from './Nav/Nav';
 import Search from './Search/Search';
 import Artist from './Artist/Artist';
 import ReleaseDetail from './Releases/ReleaseDetail';
+import SongDetail from './Songs/SongDetails';
 
 const App = () => {
 
@@ -15,8 +16,9 @@ const App = () => {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/search' exact component={Search} />
-          <Route path='/search/:id' component={Artist} />
-          <Route path='/songs/:title/:id' component={ReleaseDetail} />
+          <Route path='/search/:artistName/:id' component={Artist} />
+          <Route path='/songs/:artistName/:title/:id' component={ReleaseDetail} />
+          <Route path='/lyrics/:artistName/:title/:id' component={SongDetail} />
         </Switch>
       </div>
     </Router>

@@ -20,7 +20,7 @@ const ReleaseDetail = ({ match }) => {
 
   return (
       <>
-      <Songs songs={songs} />
+      <Songs artistName={match.params.artistName} songs={songs} />
       </>
   );
 
