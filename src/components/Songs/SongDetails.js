@@ -19,13 +19,13 @@ const SongDetail = ({ match }) => {
 
   return (
       <>
-      <Lyrics lyrics={lyrics} />
+      <Lyrics artistName={match.params.artistName} lyrics={lyrics} title={match.params.title} />
       </>
   );
 };
 
 SongDetail.propTypes = { 
-  match: PropTypes.object
+  match: PropTypes.object,
 };
 
 export default SongDetail;

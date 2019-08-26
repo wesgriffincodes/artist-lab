@@ -6,8 +6,8 @@ import styles from './Nav.css';
 function Nav() {
 
   return (
-    <nav>
-      <h3>Artist search</h3>
+    <nav className={styles.Nav}>
+      <h2>Artist search</h2>
       <ul className={styles.Navlink}>
         <Link to='/'>
           <li>Home</li>

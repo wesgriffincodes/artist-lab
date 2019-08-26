@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Metal+Mania&display=swap');
+
+
+.Nav {
+  @import url('https://fonts.googleapis.com/css?family=Metal+Mania&display=swap');
+
+  h2 {
+    font-family: 'Metal Mania', cursive;
+  }
+}
+
+
 .Navlink {
     width: 50%;
     display: flex;
@@ -12,6 +24,14 @@
       color: white;
       text-decoration: none;
     }
+
+    h3 {
+      @import url('https://fonts.googleapis.com/css?family=Metal+Mania&display=swap');
+      font-family: 'Metal Mania', cursive;
+      color: red;
+    }
   }
+
+
 
   
