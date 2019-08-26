@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Metal+Mania&display=swap');
+
+.App {
+    text-align: center;
+  }
+  
+  Nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background: rgb(73, 79, 82);
+    color: white
+  }
+
+
+  

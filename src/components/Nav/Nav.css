@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Metal+Mania&display=swap');
+
+
+.Nav {
+  @import url('https://fonts.googleapis.com/css?family=Metal+Mania&display=swap');
+
+  h2 {
+    font-family: 'Metal Mania', cursive;
+  }
+}
+
+
+.Navlink {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+
+  li {
+      margin: 5px;
+      padding: 5px;
+      list-style: none;
+      color: white;
+      text-decoration: none;
+    }
+
+    h3 {
+      @import url('https://fonts.googleapis.com/css?family=Metal+Mania&display=swap');
+      font-family: 'Metal Mania', cursive;
+      color: red;
+    }
+  }
+
+
+
+  
